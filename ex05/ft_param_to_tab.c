@@ -6,15 +6,16 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/21 14:24:11 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/21 14:40:24 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/21 14:52:48 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_stock_par.h"
+#include <stdlib.h>
 
 char	**ft_split_whitespaces(char *str);
 
-char	*ft_strdup(char *src, int length)
+char	*ft_strdup2(char *src, int length)
 {
 	char	*cpy;
 	int		i;
@@ -41,15 +42,15 @@ struct s_stock_par	*ft_param_to_tab(int ac, char **av)
 	while (i < ac)
 	{
 		size = 0;
-		while (av[i])
+		while (av[i][size])
 			size++;
 		boxes[i].size_param = size;
 		boxes[i].str = (char*)malloc(sizeof(char) * (size + 1));
-		boxes[i].str = &av[i];
-		boxes[i].copy = ft_strdup(av[i], size);
+		boxes[i].str = av[i];
+		boxes[i].copy = ft_strdup2(av[i], size);
 		boxes[i].tab = ft_split_whitespaces(av[i]);
 		i++;
 	}
-	boxes[i].str = "0";
+	boxes[i].str = 0;
 	return (boxes);
 }
