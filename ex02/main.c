@@ -6,11 +6,12 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/21 13:21:00 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/21 13:31:31 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/21 14:04:32 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_boolean.h"
+#include <unistd.h>
 
 void	ft_putstr(char *str)
 {
