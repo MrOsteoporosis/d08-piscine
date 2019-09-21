@@ -6,16 +6,16 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/21 14:24:11 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/21 14:52:48 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/21 15:18:37 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_stock_par.h"
 #include <stdlib.h>
 
-char	**ft_split_whitespaces(char *str);
+char				**ft_split_whitespaces(char *str);
 
-char	*ft_strdup2(char *src, int length)
+char				*ft_strdup2(char *src, int length)
 {
 	char	*cpy;
 	int		i;
