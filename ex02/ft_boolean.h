@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/21 13:24:09 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/21 13:49:04 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/21 13:50:22 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 typedef	enum
 {
+	isfalse,
 	istrue,
-	isfalse
 }	t_bool;
 #endif
